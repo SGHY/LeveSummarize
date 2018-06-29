@@ -45,6 +45,7 @@
         self.currentArr = [[NSMutableArray alloc] init];
         
         [self loadData];
+        [self addAzimuthViewAtRadarView];
         [self startGyroPush];
         [self startLocation];
     }
@@ -437,12 +438,6 @@
 }
 #pragma mark -- 定位成功
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    [_locationManager stopUpdatingLocation];
-    static BOOL first = YES;
-    if (first) {
-        [self addAzimuthViewAtRadarView];
-        first = NO;
-    }
 }
 #pragma mark -- 定位失败
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
