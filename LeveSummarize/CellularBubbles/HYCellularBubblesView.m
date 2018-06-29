@@ -28,14 +28,18 @@
         self.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
         [self setUpBubbles];
         
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(0, 30, 60, 30);
-        [btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-        [btn setTitle:@"退出" forState:UIControlStateNormal];
-        [btn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:btn];
+        [self createReturnBack];
     }
     return self;
+}
+- (void)createReturnBack
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(kScreenWidth-60, 30, 60, 30);
+    [btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [btn setTitle:@"退出" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:btn];
 }
 - (void)backAction
 {

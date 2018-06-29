@@ -21,8 +21,12 @@
     // Do any additional setup after loading the view.
     [self.view addSubview:self.tableView];
     
+    [self createReturnBack];
+}
+- (void)createReturnBack
+{
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 30, 60, 30);
+    btn.frame = CGRectMake(kScreenWidth-60, 30, 60, 30);
     [btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     [btn setTitle:@"退出" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
