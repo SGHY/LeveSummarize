@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDA4193220DCDD0700FB7120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4193120DCDD0700FB7120 /* AppDelegate.m */; };
+		DDA4193520DCDD0700FB7120 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4193420DCDD0700FB7120 /* ViewController.m */; };
+		DDA4193820DCDD0700FB7120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA4193620DCDD0700FB7120 /* Main.storyboard */; };
+		DDA4193A20DCDD0700FB7120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA4193920DCDD0700FB7120 /* Assets.xcassets */; };
+		DDA4193D20DCDD0700FB7120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA4193B20DCDD0700FB7120 /* LaunchScreen.storyboard */; };
+		DDA4194020DCDD0700FB7120 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4193F20DCDD0700FB7120 /* main.m */; };
+		DDA4194A20DCDD0700FB7120 /* LeveSummarizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4194920DCDD0700FB7120 /* LeveSummarizeTests.m */; };
+		DDA4195520DCDD0700FB7120 /* LeveSummarizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4195420DCDD0700FB7120 /* LeveSummarizeUITests.m */; };
+		DDA4196420DCDD8700FB7120 /* HYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4196320DCDD8700FB7120 /* HYRootViewController.m */; };
+		DDA4196920DCE58100FB7120 /* LVNewHeartbeatMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4196720DCE58100FB7120 /* LVNewHeartbeatMainView.m */; };
+		DDA4196C20DCE59300FB7120 /* LVNewHeartbeatBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4196B20DCE59300FB7120 /* LVNewHeartbeatBottomView.m */; };
+		DDA4197120DCE59D00FB7120 /* LVNewHeartbeatCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4196D20DCE59D00FB7120 /* LVNewHeartbeatCardContainer.m */; };
+		DDA4197220DCE59D00FB7120 /* LVNewHeartbeatCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4196F20DCE59D00FB7120 /* LVNewHeartbeatCardView.m */; };
+		DDA4197520DCE5B600FB7120 /* LVNewHeartbeatUserMsgView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4197320DCE5B600FB7120 /* LVNewHeartbeatUserMsgView.m */; };
+		DDA4197A20DCE67C00FB7120 /* LVNewHeartbeatNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4197720DCE67900FB7120 /* LVNewHeartbeatNavView.m */; };
+		DDA4197F20DCE9A000FB7120 /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4197D20DCE9A000FB7120 /* UIView+Rotate.m */; };
+		DDA4198220DCEA8D00FB7120 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4198120DCEA8D00FB7120 /* UIView+Frame.m */; };
+		DDA4198520DCEAE000FB7120 /* NSString+IPhoneType.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4198320DCEADF00FB7120 /* NSString+IPhoneType.m */; };
+		DDA4198820DCF3E200FB7120 /* LVNewHeartbeatBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4198620DCF3E100FB7120 /* LVNewHeartbeatBackgroundView.m */; };
+		DDA4198C20DDEBC600FB7120 /* HYSpreadAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4198B20DDEBC600FB7120 /* HYSpreadAnimationView.m */; };
+		DDA4199020E08D9D00FB7120 /* HYMatchSuccessAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4198F20E08D9D00FB7120 /* HYMatchSuccessAnimationView.m */; };
+		DDA4199420E0BBAB00FB7120 /* HYBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4199320E0BBAB00FB7120 /* HYBubbleView.m */; };
+		DDA4199A20E0BCF000FB7120 /* HYCellularBubblesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4199920E0BCF000FB7120 /* HYCellularBubblesView.m */; };
+		DDA4199E20E1E84200FB7120 /* HY3DRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4199D20E1E84200FB7120 /* HY3DRotateView.m */; };
+		DDA419B020E2286800FB7120 /* HYBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419AA20E2286700FB7120 /* HYBottomViewController.m */; };
+		DDA419B120E2286800FB7120 /* HYTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419AB20E2286800FB7120 /* HYTopViewController.m */; };
+		DDA419B220E2286800FB7120 /* HYLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419AC20E2286800FB7120 /* HYLeftViewController.m */; };
+		DDA419B320E2286800FB7120 /* HYRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419AE20E2286800FB7120 /* HYRightViewController.m */; };
+		DDA419B620E2291100FB7120 /* HYCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419B420E2291100FB7120 /* HYCaptureViewController.m */; };
+		DDA419B920E2299500FB7120 /* HYMainLayoutManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419B820E2299500FB7120 /* HYMainLayoutManagerView.m */; };
+		DDA419BC20E2483D00FB7120 /* HYImitationSnapChatVc.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419BB20E2483D00FB7120 /* HYImitationSnapChatVc.m */; };
+		DDA419C020E3846300FB7120 /* HYPhotoZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419BF20E3846300FB7120 /* HYPhotoZoomViewController.m */; };
+		DDA419C320E384E900FB7120 /* HYImageZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419C220E384E900FB7120 /* HYImageZoomView.m */; };
+		DDA419C620E3887A00FB7120 /* HYPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419C520E3887900FB7120 /* HYPhotoCell.m */; };
+		DDA419CA20E3950300FB7120 /* HYWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419C820E3950200FB7120 /* HYWaterflowLayout.m */; };
+		DDA419CD20E3957500FB7120 /* HYWaterflowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419CC20E3957500FB7120 /* HYWaterflowViewController.m */; };
+		DDA419D020E3966D00FB7120 /* HYWaterflowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419CF20E3966D00FB7120 /* HYWaterflowCell.m */; };
+		DDA419D420E4773700FB7120 /* HYRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419D320E4773700FB7120 /* HYRadarView.m */; };
+		DDA419DA20E48A3800FB7120 /* HYImitationSuibianzouVc.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419D920E48A3800FB7120 /* HYImitationSuibianzouVc.m */; };
+		DDA419DD20E48E3A00FB7120 /* HYTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419DC20E48E3A00FB7120 /* HYTagModel.m */; };
+		DDA419E020E48F3800FB7120 /* HYTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419DF20E48F3800FB7120 /* HYTagView.m */; };
+		DDA419E320E492D500FB7120 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419E120E492D500FB7120 /* NSString+Size.m */; };
+		DDA419E620E4B1EE00FB7120 /* HYTagsSuspendingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA419E520E4B1EE00FB7120 /* HYTagsSuspendingView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDA4194620DCDD0700FB7120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDA4192520DCDD0700FB7120 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDA4192C20DCDD0700FB7120;
+			remoteInfo = LeveSummarize;
+		};
+		DDA4195120DCDD0700FB7120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDA4192520DCDD0700FB7120 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDA4192C20DCDD0700FB7120;
+			remoteInfo = LeveSummarize;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDA4192D20DCDD0700FB7120 /* LeveSummarize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeveSummarize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA4193020DCDD0700FB7120 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDA4193120DCDD0700FB7120 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDA4193320DCDD0700FB7120 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DDA4193420DCDD0700FB7120 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDA4193720DCDD0700FB7120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDA4193920DCDD0700FB7120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDA4193C20DCDD0700FB7120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDA4193E20DCDD0700FB7120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA4193F20DCDD0700FB7120 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDA4194520DCDD0700FB7120 /* LeveSummarizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeveSummarizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA4194920DCDD0700FB7120 /* LeveSummarizeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeveSummarizeTests.m; sourceTree = "<group>"; };
+		DDA4194B20DCDD0700FB7120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA4195020DCDD0700FB7120 /* LeveSummarizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeveSummarizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA4195420DCDD0700FB7120 /* LeveSummarizeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeveSummarizeUITests.m; sourceTree = "<group>"; };
+		DDA4195620DCDD0700FB7120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA4196220DCDD8700FB7120 /* HYRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYRootViewController.h; sourceTree = "<group>"; };
+		DDA4196320DCDD8700FB7120 /* HYRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYRootViewController.m; sourceTree = "<group>"; };
+		DDA4196620DCE4D900FB7120 /* HYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPrefixHeader.pch; sourceTree = "<group>"; };
+		DDA4196720DCE58100FB7120 /* LVNewHeartbeatMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNewHeartbeatMainView.m; sourceTree = "<group>"; };
+		DDA4196820DCE58100FB7120 /* LVNewHeartbeatMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNewHeartbeatMainView.h; sourceTree = "<group>"; };
+		DDA4196A20DCE59300FB7120 /* LVNewHeartbeatBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNewHeartbeatBottomView.h; sourceTree = "<group>"; };
+		DDA4196B20DCE59300FB7120 /* LVNewHeartbeatBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNewHeartbeatBottomView.m; sourceTree = "<group>"; };
+		DDA4196D20DCE59D00FB7120 /* LVNewHeartbeatCardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNewHeartbeatCardContainer.m; sourceTree = "<group>"; };
+		DDA4196E20DCE59D00FB7120 /* LVNewHeartbeatCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNewHeartbeatCardView.h; sourceTree = "<group>"; };
+		DDA4196F20DCE59D00FB7120 /* LVNewHeartbeatCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNewHeartbeatCardView.m; sourceTree = "<group>"; };
+		DDA4197020DCE59D00FB7120 /* LVNewHeartbeatCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNewHeartbeatCardContainer.h; sourceTree = "<group>"; };
+		DDA4197320DCE5B600FB7120 /* LVNewHeartbeatUserMsgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNewHeartbeatUserMsgView.m; sourceTree = "<group>"; };
+		DDA4197420DCE5B600FB7120 /* LVNewHeartbeatUserMsgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNewHeartbeatUserMsgView.h; sourceTree = "<group>"; };
+		DDA4197720DCE67900FB7120 /* LVNewHeartbeatNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNewHeartbeatNavView.m; sourceTree = "<group>"; };
+		DDA4197820DCE67A00FB7120 /* LVNewHeartbeatNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNewHeartbeatNavView.h; sourceTree = "<group>"; };
+		DDA4197D20DCE9A000FB7120 /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
+		DDA4197E20DCE9A000FB7120 /* UIView+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rotate.h"; sourceTree = "<group>"; };
+		DDA4198020DCEA8D00FB7120 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		DDA4198120DCEA8D00FB7120 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		DDA4198320DCEADF00FB7120 /* NSString+IPhoneType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IPhoneType.m"; sourceTree = "<group>"; };
+		DDA4198420DCEADF00FB7120 /* NSString+IPhoneType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IPhoneType.h"; sourceTree = "<group>"; };
+		DDA4198620DCF3E100FB7120 /* LVNewHeartbeatBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNewHeartbeatBackgroundView.m; sourceTree = "<group>"; };
+		DDA4198720DCF3E100FB7120 /* LVNewHeartbeatBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNewHeartbeatBackgroundView.h; sourceTree = "<group>"; };
+		DDA4198A20DDEBC600FB7120 /* HYSpreadAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYSpreadAnimationView.h; sourceTree = "<group>"; };
+		DDA4198B20DDEBC600FB7120 /* HYSpreadAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYSpreadAnimationView.m; sourceTree = "<group>"; };
+		DDA4198E20E08D9D00FB7120 /* HYMatchSuccessAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYMatchSuccessAnimationView.h; sourceTree = "<group>"; };
+		DDA4198F20E08D9D00FB7120 /* HYMatchSuccessAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYMatchSuccessAnimationView.m; sourceTree = "<group>"; };
+		DDA4199220E0BBAB00FB7120 /* HYBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYBubbleView.h; sourceTree = "<group>"; };
+		DDA4199320E0BBAB00FB7120 /* HYBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYBubbleView.m; sourceTree = "<group>"; };
+		DDA4199820E0BCF000FB7120 /* HYCellularBubblesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYCellularBubblesView.h; sourceTree = "<group>"; };
+		DDA4199920E0BCF000FB7120 /* HYCellularBubblesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYCellularBubblesView.m; sourceTree = "<group>"; };
+		DDA4199C20E1E84200FB7120 /* HY3DRotateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HY3DRotateView.h; sourceTree = "<group>"; };
+		DDA4199D20E1E84200FB7120 /* HY3DRotateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HY3DRotateView.m; sourceTree = "<group>"; };
+		DDA419A820E2286700FB7120 /* HYTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopViewController.h; sourceTree = "<group>"; };
+		DDA419A920E2286700FB7120 /* HYBottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBottomViewController.h; sourceTree = "<group>"; };
+		DDA419AA20E2286700FB7120 /* HYBottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBottomViewController.m; sourceTree = "<group>"; };
+		DDA419AB20E2286800FB7120 /* HYTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopViewController.m; sourceTree = "<group>"; };
+		DDA419AC20E2286800FB7120 /* HYLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLeftViewController.m; sourceTree = "<group>"; };
+		DDA419AD20E2286800FB7120 /* HYRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRightViewController.h; sourceTree = "<group>"; };
+		DDA419AE20E2286800FB7120 /* HYRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRightViewController.m; sourceTree = "<group>"; };
+		DDA419AF20E2286800FB7120 /* HYLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLeftViewController.h; sourceTree = "<group>"; };
+		DDA419B420E2291100FB7120 /* HYCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCaptureViewController.m; sourceTree = "<group>"; };
+		DDA419B520E2291100FB7120 /* HYCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCaptureViewController.h; sourceTree = "<group>"; };
+		DDA419B720E2299500FB7120 /* HYMainLayoutManagerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYMainLayoutManagerView.h; sourceTree = "<group>"; };
+		DDA419B820E2299500FB7120 /* HYMainLayoutManagerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYMainLayoutManagerView.m; sourceTree = "<group>"; };
+		DDA419BA20E2483D00FB7120 /* HYImitationSnapChatVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYImitationSnapChatVc.h; sourceTree = "<group>"; };
+		DDA419BB20E2483D00FB7120 /* HYImitationSnapChatVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYImitationSnapChatVc.m; sourceTree = "<group>"; };
+		DDA419BE20E3846300FB7120 /* HYPhotoZoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPhotoZoomViewController.h; sourceTree = "<group>"; };
+		DDA419BF20E3846300FB7120 /* HYPhotoZoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPhotoZoomViewController.m; sourceTree = "<group>"; };
+		DDA419C120E384E900FB7120 /* HYImageZoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYImageZoomView.h; sourceTree = "<group>"; };
+		DDA419C220E384E900FB7120 /* HYImageZoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYImageZoomView.m; sourceTree = "<group>"; };
+		DDA419C420E3887900FB7120 /* HYPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPhotoCell.h; sourceTree = "<group>"; };
+		DDA419C520E3887900FB7120 /* HYPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPhotoCell.m; sourceTree = "<group>"; };
+		DDA419C820E3950200FB7120 /* HYWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWaterflowLayout.m; sourceTree = "<group>"; };
+		DDA419C920E3950300FB7120 /* HYWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWaterflowLayout.h; sourceTree = "<group>"; };
+		DDA419CB20E3957500FB7120 /* HYWaterflowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYWaterflowViewController.h; sourceTree = "<group>"; };
+		DDA419CC20E3957500FB7120 /* HYWaterflowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYWaterflowViewController.m; sourceTree = "<group>"; };
+		DDA419CE20E3966D00FB7120 /* HYWaterflowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYWaterflowCell.h; sourceTree = "<group>"; };
+		DDA419CF20E3966D00FB7120 /* HYWaterflowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYWaterflowCell.m; sourceTree = "<group>"; };
+		DDA419D220E4773700FB7120 /* HYRadarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYRadarView.h; sourceTree = "<group>"; };
+		DDA419D320E4773700FB7120 /* HYRadarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYRadarView.m; sourceTree = "<group>"; };
+		DDA419D820E48A3800FB7120 /* HYImitationSuibianzouVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYImitationSuibianzouVc.h; sourceTree = "<group>"; };
+		DDA419D920E48A3800FB7120 /* HYImitationSuibianzouVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYImitationSuibianzouVc.m; sourceTree = "<group>"; };
+		DDA419DB20E48E3A00FB7120 /* HYTagModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYTagModel.h; sourceTree = "<group>"; };
+		DDA419DC20E48E3A00FB7120 /* HYTagModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYTagModel.m; sourceTree = "<group>"; };
+		DDA419DE20E48F3800FB7120 /* HYTagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYTagView.h; sourceTree = "<group>"; };
+		DDA419DF20E48F3800FB7120 /* HYTagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYTagView.m; sourceTree = "<group>"; };
+		DDA419E120E492D500FB7120 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		DDA419E220E492D500FB7120 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		DDA419E420E4B1EE00FB7120 /* HYTagsSuspendingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYTagsSuspendingView.h; sourceTree = "<group>"; };
+		DDA419E520E4B1EE00FB7120 /* HYTagsSuspendingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYTagsSuspendingView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDA4192A20DCDD0700FB7120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA4194220DCDD0700FB7120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA4194D20DCDD0700FB7120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDA4192420DCDD0700FB7120 = {
+			isa = PBXGroup;
+			children = (
+				DDA4192F20DCDD0700FB7120 /* LeveSummarize */,
+				DDA4194820DCDD0700FB7120 /* LeveSummarizeTests */,
+				DDA4195320DCDD0700FB7120 /* LeveSummarizeUITests */,
+				DDA4192E20DCDD0700FB7120 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDA4192E20DCDD0700FB7120 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4192D20DCDD0700FB7120 /* LeveSummarize.app */,
+				DDA4194520DCDD0700FB7120 /* LeveSummarizeTests.xctest */,
+				DDA4195020DCDD0700FB7120 /* LeveSummarizeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDA4192F20DCDD0700FB7120 /* LeveSummarize */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4193020DCDD0700FB7120 /* AppDelegate.h */,
+				DDA4193120DCDD0700FB7120 /* AppDelegate.m */,
+				DDA4193320DCDD0700FB7120 /* ViewController.h */,
+				DDA4193420DCDD0700FB7120 /* ViewController.m */,
+				DDA4196220DCDD8700FB7120 /* HYRootViewController.h */,
+				DDA4196320DCDD8700FB7120 /* HYRootViewController.m */,
+				DDA4197C20DCE96100FB7120 /* Categories */,
+				DDA419D120E475E100FB7120 /* ImitationSuibianzou */,
+				DDA419C720E3940C00FB7120 /* Waterflow */,
+				DDA419BD20E3844600FB7120 /* PhotoZoom */,
+				DDA419A720E221E200FB7120 /* ImitationSnapChat */,
+				DDA4199B20E1E7FC00FB7120 /* 3DRotate */,
+				DDA4199120E0BB9200FB7120 /* CellularBubbles */,
+				DDA4198D20E08D7C00FB7120 /* MatchSuccessAnimation */,
+				DDA4198920DDEB5C00FB7120 /* SpreadAnimation */,
+				DDA4196520DCE44800FB7120 /* HeartbeatCards */,
+				DDA4193620DCDD0700FB7120 /* Main.storyboard */,
+				DDA4193920DCDD0700FB7120 /* Assets.xcassets */,
+				DDA4193B20DCDD0700FB7120 /* LaunchScreen.storyboard */,
+				DDA4193E20DCDD0700FB7120 /* Info.plist */,
+				DDA4193F20DCDD0700FB7120 /* main.m */,
+				DDA4196620DCE4D900FB7120 /* HYPrefixHeader.pch */,
+			);
+			path = LeveSummarize;
+			sourceTree = "<group>";
+		};
+		DDA4194820DCDD0700FB7120 /* LeveSummarizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4194920DCDD0700FB7120 /* LeveSummarizeTests.m */,
+				DDA4194B20DCDD0700FB7120 /* Info.plist */,
+			);
+			path = LeveSummarizeTests;
+			sourceTree = "<group>";
+		};
+		DDA4195320DCDD0700FB7120 /* LeveSummarizeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4195420DCDD0700FB7120 /* LeveSummarizeUITests.m */,
+				DDA4195620DCDD0700FB7120 /* Info.plist */,
+			);
+			path = LeveSummarizeUITests;
+			sourceTree = "<group>";
+		};
+		DDA4196520DCE44800FB7120 /* HeartbeatCards */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4196820DCE58100FB7120 /* LVNewHeartbeatMainView.h */,
+				DDA4196720DCE58100FB7120 /* LVNewHeartbeatMainView.m */,
+				DDA4198720DCF3E100FB7120 /* LVNewHeartbeatBackgroundView.h */,
+				DDA4198620DCF3E100FB7120 /* LVNewHeartbeatBackgroundView.m */,
+				DDA4197820DCE67A00FB7120 /* LVNewHeartbeatNavView.h */,
+				DDA4197720DCE67900FB7120 /* LVNewHeartbeatNavView.m */,
+				DDA4197420DCE5B600FB7120 /* LVNewHeartbeatUserMsgView.h */,
+				DDA4197320DCE5B600FB7120 /* LVNewHeartbeatUserMsgView.m */,
+				DDA4196A20DCE59300FB7120 /* LVNewHeartbeatBottomView.h */,
+				DDA4196B20DCE59300FB7120 /* LVNewHeartbeatBottomView.m */,
+				DDA4197020DCE59D00FB7120 /* LVNewHeartbeatCardContainer.h */,
+				DDA4196D20DCE59D00FB7120 /* LVNewHeartbeatCardContainer.m */,
+				DDA4196E20DCE59D00FB7120 /* LVNewHeartbeatCardView.h */,
+				DDA4196F20DCE59D00FB7120 /* LVNewHeartbeatCardView.m */,
+			);
+			path = HeartbeatCards;
+			sourceTree = "<group>";
+		};
+		DDA4197C20DCE96100FB7120 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DDA419E220E492D500FB7120 /* NSString+Size.h */,
+				DDA419E120E492D500FB7120 /* NSString+Size.m */,
+				DDA4198420DCEADF00FB7120 /* NSString+IPhoneType.h */,
+				DDA4198320DCEADF00FB7120 /* NSString+IPhoneType.m */,
+				DDA4198020DCEA8D00FB7120 /* UIView+Frame.h */,
+				DDA4198120DCEA8D00FB7120 /* UIView+Frame.m */,
+				DDA4197E20DCE9A000FB7120 /* UIView+Rotate.h */,
+				DDA4197D20DCE9A000FB7120 /* UIView+Rotate.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DDA4198920DDEB5C00FB7120 /* SpreadAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4198A20DDEBC600FB7120 /* HYSpreadAnimationView.h */,
+				DDA4198B20DDEBC600FB7120 /* HYSpreadAnimationView.m */,
+			);
+			path = SpreadAnimation;
+			sourceTree = "<group>";
+		};
+		DDA4198D20E08D7C00FB7120 /* MatchSuccessAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4198E20E08D9D00FB7120 /* HYMatchSuccessAnimationView.h */,
+				DDA4198F20E08D9D00FB7120 /* HYMatchSuccessAnimationView.m */,
+			);
+			path = MatchSuccessAnimation;
+			sourceTree = "<group>";
+		};
+		DDA4199120E0BB9200FB7120 /* CellularBubbles */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4199820E0BCF000FB7120 /* HYCellularBubblesView.h */,
+				DDA4199920E0BCF000FB7120 /* HYCellularBubblesView.m */,
+				DDA4199220E0BBAB00FB7120 /* HYBubbleView.h */,
+				DDA4199320E0BBAB00FB7120 /* HYBubbleView.m */,
+			);
+			path = CellularBubbles;
+			sourceTree = "<group>";
+		};
+		DDA4199B20E1E7FC00FB7120 /* 3DRotate */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4199C20E1E84200FB7120 /* HY3DRotateView.h */,
+				DDA4199D20E1E84200FB7120 /* HY3DRotateView.m */,
+			);
+			path = 3DRotate;
+			sourceTree = "<group>";
+		};
+		DDA419A720E221E200FB7120 /* ImitationSnapChat */ = {
+			isa = PBXGroup;
+			children = (
+				DDA419B520E2291100FB7120 /* HYCaptureViewController.h */,
+				DDA419B420E2291100FB7120 /* HYCaptureViewController.m */,
+				DDA419A820E2286700FB7120 /* HYTopViewController.h */,
+				DDA419AB20E2286800FB7120 /* HYTopViewController.m */,
+				DDA419A920E2286700FB7120 /* HYBottomViewController.h */,
+				DDA419AA20E2286700FB7120 /* HYBottomViewController.m */,
+				DDA419AF20E2286800FB7120 /* HYLeftViewController.h */,
+				DDA419AC20E2286800FB7120 /* HYLeftViewController.m */,
+				DDA419AD20E2286800FB7120 /* HYRightViewController.h */,
+				DDA419AE20E2286800FB7120 /* HYRightViewController.m */,
+				DDA419B720E2299500FB7120 /* HYMainLayoutManagerView.h */,
+				DDA419B820E2299500FB7120 /* HYMainLayoutManagerView.m */,
+				DDA419BA20E2483D00FB7120 /* HYImitationSnapChatVc.h */,
+				DDA419BB20E2483D00FB7120 /* HYImitationSnapChatVc.m */,
+			);
+			path = ImitationSnapChat;
+			sourceTree = "<group>";
+		};
+		DDA419BD20E3844600FB7120 /* PhotoZoom */ = {
+			isa = PBXGroup;
+			children = (
+				DDA419BE20E3846300FB7120 /* HYPhotoZoomViewController.h */,
+				DDA419BF20E3846300FB7120 /* HYPhotoZoomViewController.m */,
+				DDA419C120E384E900FB7120 /* HYImageZoomView.h */,
+				DDA419C220E384E900FB7120 /* HYImageZoomView.m */,
+				DDA419C420E3887900FB7120 /* HYPhotoCell.h */,
+				DDA419C520E3887900FB7120 /* HYPhotoCell.m */,
+			);
+			path = PhotoZoom;
+			sourceTree = "<group>";
+		};
+		DDA419C720E3940C00FB7120 /* Waterflow */ = {
+			isa = PBXGroup;
+			children = (
+				DDA419CB20E3957500FB7120 /* HYWaterflowViewController.h */,
+				DDA419CC20E3957500FB7120 /* HYWaterflowViewController.m */,
+				DDA419CE20E3966D00FB7120 /* HYWaterflowCell.h */,
+				DDA419CF20E3966D00FB7120 /* HYWaterflowCell.m */,
+				DDA419C920E3950300FB7120 /* HYWaterflowLayout.h */,
+				DDA419C820E3950200FB7120 /* HYWaterflowLayout.m */,
+			);
+			path = Waterflow;
+			sourceTree = "<group>";
+		};
+		DDA419D120E475E100FB7120 /* ImitationSuibianzou */ = {
+			isa = PBXGroup;
+			children = (
+				DDA419D220E4773700FB7120 /* HYRadarView.h */,
+				DDA419D320E4773700FB7120 /* HYRadarView.m */,
+				DDA419DE20E48F3800FB7120 /* HYTagView.h */,
+				DDA419DF20E48F3800FB7120 /* HYTagView.m */,
+				DDA419DB20E48E3A00FB7120 /* HYTagModel.h */,
+				DDA419DC20E48E3A00FB7120 /* HYTagModel.m */,
+				DDA419E420E4B1EE00FB7120 /* HYTagsSuspendingView.h */,
+				DDA419E520E4B1EE00FB7120 /* HYTagsSuspendingView.m */,
+				DDA419D820E48A3800FB7120 /* HYImitationSuibianzouVc.h */,
+				DDA419D920E48A3800FB7120 /* HYImitationSuibianzouVc.m */,
+			);
+			path = ImitationSuibianzou;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDA4192C20DCDD0700FB7120 /* LeveSummarize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA4195920DCDD0700FB7120 /* Build configuration list for PBXNativeTarget "LeveSummarize" */;
+			buildPhases = (
+				DDA4192920DCDD0700FB7120 /* Sources */,
+				DDA4192A20DCDD0700FB7120 /* Frameworks */,
+				DDA4192B20DCDD0700FB7120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeveSummarize;
+			productName = LeveSummarize;
+			productReference = DDA4192D20DCDD0700FB7120 /* LeveSummarize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDA4194420DCDD0700FB7120 /* LeveSummarizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA4195C20DCDD0700FB7120 /* Build configuration list for PBXNativeTarget "LeveSummarizeTests" */;
+			buildPhases = (
+				DDA4194120DCDD0700FB7120 /* Sources */,
+				DDA4194220DCDD0700FB7120 /* Frameworks */,
+				DDA4194320DCDD0700FB7120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDA4194720DCDD0700FB7120 /* PBXTargetDependency */,
+			);
+			name = LeveSummarizeTests;
+			productName = LeveSummarizeTests;
+			productReference = DDA4194520DCDD0700FB7120 /* LeveSummarizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDA4194F20DCDD0700FB7120 /* LeveSummarizeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA4195F20DCDD0700FB7120 /* Build configuration list for PBXNativeTarget "LeveSummarizeUITests" */;
+			buildPhases = (
+				DDA4194C20DCDD0700FB7120 /* Sources */,
+				DDA4194D20DCDD0700FB7120 /* Frameworks */,
+				DDA4194E20DCDD0700FB7120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDA4195220DCDD0700FB7120 /* PBXTargetDependency */,
+			);
+			name = LeveSummarizeUITests;
+			productName = LeveSummarizeUITests;
+			productReference = DDA4195020DCDD0700FB7120 /* LeveSummarizeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDA4192520DCDD0700FB7120 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = leve;
+				TargetAttributes = {
+					DDA4192C20DCDD0700FB7120 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DDA4194420DCDD0700FB7120 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DDA4192C20DCDD0700FB7120;
+					};
+					DDA4194F20DCDD0700FB7120 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DDA4192C20DCDD0700FB7120;
+					};
+				};
+			};
+			buildConfigurationList = DDA4192820DCDD0700FB7120 /* Build configuration list for PBXProject "LeveSummarize" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDA4192420DCDD0700FB7120;
+			productRefGroup = DDA4192E20DCDD0700FB7120 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDA4192C20DCDD0700FB7120 /* LeveSummarize */,
+				DDA4194420DCDD0700FB7120 /* LeveSummarizeTests */,
+				DDA4194F20DCDD0700FB7120 /* LeveSummarizeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDA4192B20DCDD0700FB7120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA4193D20DCDD0700FB7120 /* LaunchScreen.storyboard in Resources */,
+				DDA4193A20DCDD0700FB7120 /* Assets.xcassets in Resources */,
+				DDA4193820DCDD0700FB7120 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA4194320DCDD0700FB7120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA4194E20DCDD0700FB7120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDA4192920DCDD0700FB7120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA4198220DCEA8D00FB7120 /* UIView+Frame.m in Sources */,
+				DDA419DD20E48E3A00FB7120 /* HYTagModel.m in Sources */,
+				DDA4198C20DDEBC600FB7120 /* HYSpreadAnimationView.m in Sources */,
+				DDA4199420E0BBAB00FB7120 /* HYBubbleView.m in Sources */,
+				DDA4193520DCDD0700FB7120 /* ViewController.m in Sources */,
+				DDA419C320E384E900FB7120 /* HYImageZoomView.m in Sources */,
+				DDA4197F20DCE9A000FB7120 /* UIView+Rotate.m in Sources */,
+				DDA419C020E3846300FB7120 /* HYPhotoZoomViewController.m in Sources */,
+				DDA419B920E2299500FB7120 /* HYMainLayoutManagerView.m in Sources */,
+				DDA419D020E3966D00FB7120 /* HYWaterflowCell.m in Sources */,
+				DDA4196420DCDD8700FB7120 /* HYRootViewController.m in Sources */,
+				DDA4198520DCEAE000FB7120 /* NSString+IPhoneType.m in Sources */,
+				DDA419CD20E3957500FB7120 /* HYWaterflowViewController.m in Sources */,
+				DDA419CA20E3950300FB7120 /* HYWaterflowLayout.m in Sources */,
+				DDA4199E20E1E84200FB7120 /* HY3DRotateView.m in Sources */,
+				DDA419E320E492D500FB7120 /* NSString+Size.m in Sources */,
+				DDA419B020E2286800FB7120 /* HYBottomViewController.m in Sources */,
+				DDA419DA20E48A3800FB7120 /* HYImitationSuibianzouVc.m in Sources */,
+				DDA419D420E4773700FB7120 /* HYRadarView.m in Sources */,
+				DDA419E020E48F3800FB7120 /* HYTagView.m in Sources */,
+				DDA4197A20DCE67C00FB7120 /* LVNewHeartbeatNavView.m in Sources */,
+				DDA4198820DCF3E200FB7120 /* LVNewHeartbeatBackgroundView.m in Sources */,
+				DDA4194020DCDD0700FB7120 /* main.m in Sources */,
+				DDA419B220E2286800FB7120 /* HYLeftViewController.m in Sources */,
+				DDA419B120E2286800FB7120 /* HYTopViewController.m in Sources */,
+				DDA4196C20DCE59300FB7120 /* LVNewHeartbeatBottomView.m in Sources */,
+				DDA419E620E4B1EE00FB7120 /* HYTagsSuspendingView.m in Sources */,
+				DDA4199020E08D9D00FB7120 /* HYMatchSuccessAnimationView.m in Sources */,
+				DDA419B620E2291100FB7120 /* HYCaptureViewController.m in Sources */,
+				DDA419B320E2286800FB7120 /* HYRightViewController.m in Sources */,
+				DDA4197220DCE59D00FB7120 /* LVNewHeartbeatCardView.m in Sources */,
+				DDA4199A20E0BCF000FB7120 /* HYCellularBubblesView.m in Sources */,
+				DDA4196920DCE58100FB7120 /* LVNewHeartbeatMainView.m in Sources */,
+				DDA4197120DCE59D00FB7120 /* LVNewHeartbeatCardContainer.m in Sources */,
+				DDA4197520DCE5B600FB7120 /* LVNewHeartbeatUserMsgView.m in Sources */,
+				DDA419BC20E2483D00FB7120 /* HYImitationSnapChatVc.m in Sources */,
+				DDA419C620E3887A00FB7120 /* HYPhotoCell.m in Sources */,
+				DDA4193220DCDD0700FB7120 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA4194120DCDD0700FB7120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA4194A20DCDD0700FB7120 /* LeveSummarizeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA4194C20DCDD0700FB7120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA4195520DCDD0700FB7120 /* LeveSummarizeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDA4194720DCDD0700FB7120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDA4192C20DCDD0700FB7120 /* LeveSummarize */;
+			targetProxy = DDA4194620DCDD0700FB7120 /* PBXContainerItemProxy */;
+		};
+		DDA4195220DCDD0700FB7120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDA4192C20DCDD0700FB7120 /* LeveSummarize */;
+			targetProxy = DDA4195120DCDD0700FB7120 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDA4193620DCDD0700FB7120 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA4193720DCDD0700FB7120 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDA4193B20DCDD0700FB7120 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA4193C20DCDD0700FB7120 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDA4195720DCDD0700FB7120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDA4195820DCDD0700FB7120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDA4195A20DCDD0700FB7120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2JSHH2VCW;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LeveSummarize/HYPrefixHeader.pch";
+				INFOPLIST_FILE = LeveSummarize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leve.LeveSummarize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDA4195B20DCDD0700FB7120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2JSHH2VCW;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LeveSummarize/HYPrefixHeader.pch";
+				INFOPLIST_FILE = LeveSummarize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leve.LeveSummarize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDA4195D20DCDD0700FB7120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeveSummarizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leve.LeveSummarizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeveSummarize.app/LeveSummarize";
+			};
+			name = Debug;
+		};
+		DDA4195E20DCDD0700FB7120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeveSummarizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leve.LeveSummarizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeveSummarize.app/LeveSummarize";
+			};
+			name = Release;
+		};
+		DDA4196020DCDD0700FB7120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeveSummarizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leve.LeveSummarizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeveSummarize;
+			};
+			name = Debug;
+		};
+		DDA4196120DCDD0700FB7120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeveSummarizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leve.LeveSummarizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeveSummarize;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDA4192820DCDD0700FB7120 /* Build configuration list for PBXProject "LeveSummarize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA4195720DCDD0700FB7120 /* Debug */,
+				DDA4195820DCDD0700FB7120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA4195920DCDD0700FB7120 /* Build configuration list for PBXNativeTarget "LeveSummarize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA4195A20DCDD0700FB7120 /* Debug */,
+				DDA4195B20DCDD0700FB7120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA4195C20DCDD0700FB7120 /* Build configuration list for PBXNativeTarget "LeveSummarizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA4195D20DCDD0700FB7120 /* Debug */,
+				DDA4195E20DCDD0700FB7120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA4195F20DCDD0700FB7120 /* Build configuration list for PBXNativeTarget "LeveSummarizeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA4196020DCDD0700FB7120 /* Debug */,
+				DDA4196120DCDD0700FB7120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDA4192520DCDD0700FB7120 /* Project object */;
+}

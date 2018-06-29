@@ -1,0 +1,102 @@
+//
+//  HYPrefixHeader.pch
+//  LeveSummarize
+//
+//  Created by leve on 2018/6/22.
+//  Copyright © 2018年 leve. All rights reserved.
+//
+
+#ifndef HYPrefixHeader_pch
+#define HYPrefixHeader_pch
+#import "UIView+Frame.h"
+#import "NSString+IPhoneType.h"
+
+#define _AppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+/**
+ *  弱指针
+ */
+#define WeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define kRGBColor(r,g,b) kRGBAColor(r,g,b,1.0f)
+#define kRGBAColor(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define kBaseBgColor [UIColor colorWithRed:0.94f green:0.94f blue:0.94f alpha:1.00f]
+#define kCommonGrayTextColor [UIColor colorWithRed:0.63f green:0.63f blue:0.63f alpha:1.00f]
+#define kCommonRedColor [UIColor colorWithRed:0.91f green:0.33f blue:0.33f alpha:1.00f]
+#define kBgColor kRGBColor(243,245,247)
+#define kLineBgColor [UIColor colorWithRed:0.86f green:0.88f blue:0.89f alpha:1.00f]
+#define kTextColor [UIColor colorWithRed:0.32f green:0.36f blue:0.40f alpha:1.00f]
+
+#define kCommonBlackColor kRGBColor(69, 74, 95)
+#define kSeperatorColor kRGBColor(234,237,240)
+#define kDetailTextColor [UIColor colorWithRed:0.56f green:0.60f blue:0.62f alpha:1.00f]
+#define kCommonTintColor [UIColor colorWithRed:0.42f green:0.33f blue:0.27f alpha:1.00f]
+#define kCommonBgColor [UIColor colorWithRed:0.86f green:0.85f blue:0.80f alpha:1.00f]
+#define kCommonHighLightRedColor [UIColor colorWithRed:1.00f green:0.49f blue:0.65f alpha:1.00f]
+#define kConmmonMainColor [UIColor colorWithRed:69/255.f green:74/255.f blue:95/255.f alpha:1];
+#define kLeftMargin 15
+
+#pragma mark - 系统UI
+#define kNavigationBarHeight 44
+#define kStatusBarHeight 20
+#define kTopBarHeight 64
+#define kTopBarHeightX 88
+#define kToolBarHeightLeve 44
+#define kTabBarHeight 49
+#define kiPhone4_W 320
+#define kiPhone4_H 480
+#define kiPhone5_W 320
+#define kiPhone5_H 568
+#define kiPhone6_W 375
+#define kiPhone6_H 667
+#define kiPhone6P_W 414
+#define kiPhone6P_H 736
+#define kNavHeight ([NSString isIPhoneX]?84:64)
+
+/***  当前屏幕宽度 */
+#define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
+/***  当前屏幕高度 */
+#define kScreenHeight  [[UIScreen mainScreen] bounds].size.height
+
+/***  以6s为基准等比例高度 */
+#define kRatioHeight(height) (height)/667.0 * kScreenHeight
+/***  以6s为基准等比例宽 */
+#define kRatioWidth(weight) (weight)/375.0 * kScreenWidth
+
+#define kScreenScale   [[UIScreen mainScreen] scale]
+/***  普通字体 */
+#define kFont(size) [UIFont systemFontOfSize:size]
+/***  粗体 */
+#define kBoldFont(size) [UIFont boldSystemFontOfSize:size]
+/***  普通字体 */
+#define kFont(size) [UIFont systemFontOfSize:size]
+/** 细线高度*/
+#define kLineHeight (1 / [UIScreen mainScreen].scale)
+/**app主打蓝色*/
+#define KMainColor kRGBColor(112,105,255)
+/**app更深一点蓝色*/
+#define KBlueColor kRGBColor(105,114,255)
+/**app主打灰色*/
+#define KGrayColor kRGBColor(177,183,201)
+/**app主打浅灰色*/
+#define KLightGrayColor kRGBColor(241,242,244)
+/**app主打橙色*/
+#define KOrangeColor kRGBColor(254,194,50)
+/**app主打红色*/
+#define KRedColor kRGBColor(252,92,99)
+/**app主打黑色*/
+#define kBlackColor kRGBColor(69, 74, 95)
+
+#define degreesToRadians(x) (M_PI*(x)/180.0)
+#define radiansToDegrees(X) (X*180.0/M_PI)
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+#endif /* HYPrefixHeader_pch */
